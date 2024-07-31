@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Coffee Maker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header-logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            animation: fadeIn 1s ease-out;
+        }
+        .product-images {
+            flex: 1;
+            max-width: 100%;
+        }
+        .product-images img {
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .product-images img:hover {
+            transform: scale(1.05);
+        }
+        .product-info {
+            flex: 1;
+            padding: 20px;
+        }
+        .product-info h1 {
+            font-size: 32px;
+            color: #333;
+        }
+        .product-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .price {
+            font-size: 28px;
+            color: #e53935;
+            margin: 20px 0;
+        }
+        .buy-options {
+            margin-top: 20px;
+        }
+        .buy-option, .cancel {
+            display: block;
+            padding: 15px 20px;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease;
+            margin: 10px 0;
+        }
+        .buy-option {
+            background: #4CAF50;
+        }
+        .buy-option:hover {
+            background: #45a049;
+        }
+        .cancel {
+            background: #f44336;
+        }
+        .cancel:hover {
+            background: #d32f2f;
+        }
+        .testimonials, .trust-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 8px;
+        }
+        .testimonials h2, .trust-section h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .testimonial, .trust-item {
+            font-size: 16px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+            padding-left: 10px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .trust-item img {
+            width: 50px;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+            .product-info {
+                padding: 10px;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">Premium Coffee Maker</div>
+    </header>
+    <div class="container">
+        <div class="product">
+            <div class="product-images">
+                <img src="download.jpg" alt="Premium Coffee Maker" class="main-image">
+                <img src="images.jpg" alt="Coffee Maker Features" class="side-image">
+            </div>
+            <div class="product-info">
+                <h1>Premium Coffee Maker</h1>
+                <p>Experience the rich aroma and superior taste of freshly brewed coffee with our Premium Coffee Maker. Designed for the discerning coffee lover, this machine features advanced brewing technology, a sleek design, and an intuitive interface.</p>
+                <div class="price">$249.99</div>
+                <div class="buy-options">
+                    <a href="#" class="buy-option">Buy Now</a>
+                    <a href="#" class="buy-option">Add to Cart</a>
+                    <a href="#" class="cancel">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">"The best coffee maker I've ever used! The taste is incredible, and it's so easy to use." - Emma W.</div>
+            <div class="testimonial">"Highly recommend this product. Worth every penny!" - Liam R.</div>
+        </div>
+        <div class="trust-section">
+            <h2>Why Choose Us?</h2>
+            <div class="trust-item">
+                <img src="download (1).jpg" alt="Secure Payment">
+                <span>Secure Payment Options</span>
+            </div>
+            <div class="trust-item">
+                <img src="download (2).jpg" alt="Warranty">
+                <span>1-Year Warranty</span>
+            </div>
+            <div class="trust-item">
+                <img src="download.png" alt="Free Shipping">
+                <span>Free Shipping on Orders Over $50</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Premium Coffee Maker. All rights reserved. <br> <a href="#" style="color: #fff; text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: #fff; text-decoration: underline;">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
